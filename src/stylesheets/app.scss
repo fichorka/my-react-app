@@ -1,0 +1,57 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	font-weight:400;
+	color:#000;
+}
+.root {
+	margin:0;
+	padding:0;
+}
+.app {
+	width:60%;
+	min-width:600px;
+	margin: 0 auto;
+	padding:0;
+}
+.main {
+	display:block;
+	margin: 0 2%;
+}
+@media (max-width: 800px) {
+	.app {
+		width:100%;
+		min-width:200px;
+		.about {
+			margin: 25px 10px 35px 10px;
+			grid-gap:30px 10px;
+			.about-paragraph {
+				grid-column: span 6;
+			}
+			.about-images {
+				max-width:50%;
+				grid-column: span 6;
+				grid-row: 4 / span 1;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.app {
+	.home {
+		grid-gap:20px;
+		.article {
+			grid-column: span 12;
+		}
+		.side {
+			grid-column: span 12;
+		}
+	}
+	.page-footer {
+		margin-top:20px;
+	}
+}
+}
+	

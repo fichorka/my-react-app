@@ -1,0 +1,2 @@
+Add responsivenes (@media breakpoints[layout and font-size], decrease min-width to ~300px})
+Add acessability and Aria compatibility

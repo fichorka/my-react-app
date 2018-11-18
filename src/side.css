@@ -1,0 +1,8 @@
+.side {
+  margin: 0;
+  grid-column-start: line4;
+  grid-column-end: lastEdge;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #b3b3b3;
+  font-size: 1.8em; }
