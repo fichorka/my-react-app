@@ -8,7 +8,7 @@ class Side extends React.Component {
 		const length = homeData.side.paragraphs.length;
 		const paragraphs = [];
 		for (let i = 0; i < length; i++) {
-			paragraphs[i] = <p className="side-paragraph">{homeData.side.paragraphs[i]}</p>;
+			paragraphs[i] = <p key={i} className="side-paragraph">{homeData.side.paragraphs[i]}</p>;
 		}
 		return paragraphs;
 	}

@@ -7,7 +7,7 @@ class Article extends React.Component {
 		const length = homeData.article.paragraphs.length;
 		const paragraphs = [];
 		for (let i = 0; i < length; i++) {
-			paragraphs[i] = <p className="article-paragraph">{homeData.article.paragraphs[i]}</p>;
+			paragraphs[i] = <p key={i} className="article-paragraph">{homeData.article.paragraphs[i]}</p>;
 		}
 		return paragraphs;
 	}
