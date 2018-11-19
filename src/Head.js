@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {headData} from './data.js';
-import './head.css';
 import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 
 class Head extends React.Component {

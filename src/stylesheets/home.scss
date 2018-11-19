@@ -11,7 +11,7 @@
 		box-sizing:border-box;
 		border:1px solid hsl(0, 0%, 70%);
 		grid-column: 1 / span 8;
-		box-shadow: 0 0 3px 1px #888888;
+		box-shadow: 0 0 3px 0 #888888;
 		padding: 30px;
 		.article-heading {
 			font-size:1.5em;
@@ -36,7 +36,7 @@
 		padding: 30px 20px;
 		border-radius: 5px;
 		border:1px solid hsl(0, 0%, 70%);
-		box-shadow: 0 0 3px 1px #888888;
+		box-shadow: 0 0 3px 0 #888888;
 		
 		.side-heading {
 			font-size:1.2em;

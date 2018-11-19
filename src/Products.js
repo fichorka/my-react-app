@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Product from './Product';
 import {productsData} from './data.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './products.css';
 
 class Products extends React.Component {
 	renderProducts() {
@@ -38,10 +37,10 @@ class Products extends React.Component {
 				<h1 className="products-heading">{productsData.heading}</h1>
 				<div className="products-grid">
 
-						<p className="table-head-1">ID</p>
-						<p className="table-head-2">Name</p>
-						<p className="table-head-3">Category</p>
-						<p className="table-head-4">Price</p>
+						<p className="th-1">ID</p>
+						<p className="th-2">Name</p>
+						<p className="th-3">Category</p>
+						<p className="th-4">Price</p>
 
 					{this.renderProducts()}
 					</div>

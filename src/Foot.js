@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {footData} from './data.js';
-import './foot.css';
 
 class Foot extends React.Component {
 	render() {

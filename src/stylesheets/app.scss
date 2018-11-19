@@ -1,3 +1,14 @@
+$menu-bgcolor: hsl(0, 0%, 70%);
+$menu-bgcolor-highlight: hsl(0, 0%, 80%);
+$product-bgcolor-highlight: #ADD8E6;
+$product-th-bgcolor: hsl(0, 0%, 40%);
+
+@import 'head';
+@import 'home';
+@import 'products';
+@import 'about';
+@import 'foot';
+
 body {
 	margin:0;
 	padding:0;
@@ -20,6 +31,23 @@ body {
 	display:block;
 	margin: 0 2%;
 }
+
+@media (max-width: 700px) {
+	.app .page-header {
+		flex-direction:column;
+		align-content:stretch;
+		.page-heading {
+			text-align: center;
+		}
+		.navbar {
+			flex-direction:column;
+			justify-content:stretch;
+			.nav-link {
+				width:100%;
+			}
+		}
+	}
+}
 @media (max-width: 800px) {
 	.app {
 		width:100%;
@@ -30,8 +58,9 @@ body {
 			.about-paragraph {
 				grid-column: span 6;
 			}
-			.about-images {
-				max-width:50%;
+			.about-image {
+				width:30%;
+				border-width: 5px;
 				grid-column: span 6;
 				grid-row: 4 / span 1;
 			}
@@ -40,18 +69,17 @@ body {
 }
 @media (max-width: 1200px) {
 	.app {
-	.home {
-		grid-gap:20px;
-		.article {
-			grid-column: span 12;
+		.home {
+			grid-gap:20px;
+			.article {
+				grid-column: span 12;
+			}
+			.side {
+				grid-column: span 12;
+			}
 		}
-		.side {
-			grid-column: span 12;
+		.page-footer {
+			margin-top:20px;
 		}
 	}
-	.page-footer {
-		margin-top:20px;
-	}
 }
-}
-	

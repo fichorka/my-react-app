@@ -13,9 +13,9 @@
 		grid-auto-rows: 40px;
 		grid-gap: 3px;
 
-		.table-head-1, .table-head-2, .table-head-3, .table-head-4 {
+		.th-1, .th-2, .th-3, .th-4 {
 			color:#fff;
-			background-color: hsl(0, 0%, 40%);
+			background-color: $product-th-bgcolor;
 			display:inline-block;
 			line-height:40px;
 			padding: 0;
@@ -23,22 +23,21 @@
 			text-align:center;
 			font-weight: 300;
 		}
-		.table-head-1 {
+		.th-1 {
 			border-radius: 7px 0 0 0;;
 			grid-column: 1 / 2;
 		}
-		.table-head-2 {
+		.th-2 {
 			grid-column: 2 / 3;
 			
 		}
-		.table-head-3 {
+		.th-3 {
 			grid-column: 3 / 4;
 		}
-		.table-head-4 {
+		.th-4 {
 			grid-column: 4 / 5;
 			border-radius: 0 7px 0 0;
 		}
-		//background-color: lightblue;
 		
 		.id, .name, .category, .price {
 			height:100%;
@@ -51,33 +50,24 @@
 			background-color: hsl(0, 0%, 80%);
 			cursor: pointer;
 			&:hover {
-				background-color:#ADD8E6;
+				background-color:$product-bgcolor-highlight;
 			}
 		}
 		.id {
 			grid-column: 1 / span 1;
 			text-align:center;
-			
-			//border-right:5px solid white;
 		}
 		.name {
 			grid-column: 2 / span 1;
 			text-align:left;
 			padding: 0 3%;
-			//border-left:5px solid white;
-			//border-right:5px solid white;
-			
 		}
 		.category {
 			grid-column: 3 / span 1;
 			text-align:center;
-			//border-left:5px solid white;
-			//border-right:5px solid white;
-			
 		}
 		.price {
 			grid-column: 4 / span 1;
-			//border-left:5px solid white;
 			text-align:center;
 		}
 	}

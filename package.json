@@ -26,6 +26,7 @@
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2",
     "react-router-dom": "^4.3.1",
     "serve": "^10.1.1"
   }

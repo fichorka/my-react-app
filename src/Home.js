@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {mainData} from './data.js';
-import './home.css';
 import  Article from './Article';
 import  Side from './Side';
 
